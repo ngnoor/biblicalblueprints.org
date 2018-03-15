@@ -1,0 +1,81 @@
+<:Head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="garamond-logo-font.css" rel="stylesheet" type="text/css" />
+</:Head>
+
+<nav class="navbar-top">
+	<div class="centered-content">
+		<ul>
+			<li>
+				<a href="/">Home</a>
+			</li>
+			<li>
+				<a href="https://donations.biblicalblueprints.org">Give</a>
+			</li>
+			<li>
+				<a href="/contact.html">Contact</a>
+			</li>
+			<li>
+				<a href="/email-list.html">Mailing list</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="centered-content main-content">
+	<:Component {Page} />
+</div>
+
+<footer class="centered-content">
+	Footer deetz here
+</footer>
+
+<link rel="stylesheet" href="style.css" />
+
+<style>
+.navbar-top {
+	background-color: #333333;
+}
+
+.navbar-top ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+
+	display: flex;
+}
+.navbar-top li {
+	height: 64px;
+
+	display: flex;
+	align-items: stretch;
+}
+
+.navbar-top a {
+	color: #fdfdfd;
+	text-decoration: none;
+	font-size: 18px;
+
+	padding-left: 16px;
+	padding-right: 16px;
+
+	display: flex;
+	align-items: center;
+
+	flex-grow: 1;
+}
+.navbar-top a:visited {
+	color: #fdfdfd;
+}
+
+.navbar-top a:hover {
+	background-color: #616161;
+}
+
+.main-content {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+</style>

@@ -1,0 +1,25 @@
+body {
+	background-color: #faf7ee;
+
+	font-family: 'vollkorn', georgia;
+
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "source sans pro", sans-serif;
+}
+
+h1 { font-size: 42px; }
+h2 { font-size: 32px; }
+h3 { font-size: 22px; }
+h4 { font-size: 18px; font-weight: 700; }
+h5 { font-size: 14px; font-weight: 700; }
+h6 { font-size: 12px; font-weight: 700; }
+
+.centered-content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 32px;
+}
