@@ -2,22 +2,27 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="garamond-logo-font.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="style.css" />
 </:Head>
 
 <nav class="navbar-top">
-	<div class="centered-content">
+	<div class="centered-content navbar-top-content">
+		<img
+			src="{{rootPath}}images/logo-bb-white-circle.svg"
+			alt="BB logo in white circle"
+		>
 		<ul>
 			<li>
-				<a href="/">Home</a>
+				<a href="{{rootPath}}">Home</a>
 			</li>
 			<li>
 				<a href="https://donations.biblicalblueprints.org">Give</a>
 			</li>
 			<li>
-				<a href="/contact.html">Contact</a>
+				<a href="{{rootPath}}contact.html">Contact</a>
 			</li>
 			<li>
-				<a href="/email-list.html">Mailing list</a>
+				<a href="{{rootPath}}email-list.html">Email list</a>
 			</li>
 		</ul>
 	</div>
@@ -27,15 +32,21 @@
 	<:Component {Page} />
 </div>
 
-<footer class="centered-content">
-	Footer deetz here
-</footer>
-
-<link rel="stylesheet" href="style.css" />
 
 <style>
 .navbar-top {
 	background-color: #333333;
+}
+
+.navbar-top img {
+	height: 32px;
+	width: 32px;
+	margin-right: 16px;
+}
+
+.navbar-top-content {
+	display: flex;
+	align-items: center;
 }
 
 .navbar-top ul {
@@ -55,6 +66,7 @@
 .navbar-top a {
 	color: #fdfdfd;
 	text-decoration: none;
+	white-space: nowrap;
 	font-size: 18px;
 
 	padding-left: 16px;
@@ -75,7 +87,27 @@
 
 .main-content {
 	margin-top: 16px;
-	margin-bottom: 16px;
+	margin-bottom: 32px;
 }
+
+@media (max-width: 680px) {
+	.navbar-top img {
+		height: 28px;
+		width: 28px;
+		margin-right: 16px;
+	}
+
+	.navbar-top a {
+		font-size: 16px;
+
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	.navbar-top li {
+		height: 48px;
+	}
+}
+
 
 </style>
