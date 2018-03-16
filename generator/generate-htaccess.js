@@ -30,10 +30,10 @@ ExpiresByType text/css A3600
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
-RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTPS} off
 RewriteCond %{HTTP_HOST} !localhost [NC]
 RewriteCond %{HTTP_HOST} !192.168 [NC]
-RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule (^.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 RewriteBase /
 
