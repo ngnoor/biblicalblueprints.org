@@ -4,8 +4,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "node generate-static-html.js",
-    "watch": "watch 'npm run build' components generator pages"
+    "build:htaccess": "node generator/generate-htaccess.js",
+    "build:html": "node generate-static-html.js",
+    "build": "npm run build:htaccess && npm run build:html",
+    "watch": "watch 'npm run build:html' components generator pages"
   },
   "repository": {
     "type": "git",
