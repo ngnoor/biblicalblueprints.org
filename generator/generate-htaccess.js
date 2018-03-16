@@ -30,7 +30,6 @@ ExpiresByType text/css A3600
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
-RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteCond %{HTTP_HOST} !localhost [NC]
 RewriteCond %{HTTP_HOST} !192.168 [NC]
