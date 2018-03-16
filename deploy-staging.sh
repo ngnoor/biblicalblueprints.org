@@ -1,4 +1,3 @@
-npm run build
 mkdir -p staging-deploy
 cp -r public/* staging-deploy
 cp public/.htaccess staging-deploy

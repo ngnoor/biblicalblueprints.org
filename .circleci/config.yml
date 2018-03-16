@@ -1,0 +1,73 @@
+version: 2
+
+defaults: &defaults
+  working_directory: ~/KayserCommentaryOrg/KayserCommentary
+  docker:
+    - image: circleci/node:8-browsers
+
+git_restore_cache: &git_restore_cache
+  restore_cache:
+    keys:
+      - source-v1-{{ .Branch }}-{{ .Revision }}
+      - source-v1-{{ .Branch }}-
+      - source-v1-
+
+git_save_cache: &git_save_cache
+  save_cache:
+    key: source-v1-{{ .Branch }}-{{ .Revision }}
+    paths:
+      - ".git"
+
+
+node_restore_cache: &node_restore_cache
+  restore_cache:
+    keys:
+      - v1-dependencies-{{ checksum "package.json" }}
+      - v1-dependencies-
+
+node_save_cache: &node_save_cache
+  save_cache:
+    paths:
+      - node_modules
+    key: v1-dependencies-{{ checksum "package.json" }}
+
+
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - *git_restore_cache
+      - checkout
+      - *git_save_cache
+
+      - *node_restore_cache
+      - run: npm i
+      - *node_save_cache
+
+      - run: npm run build
+
+      - persist_to_workspace:
+          root: ~/KayserCommentaryOrg/KayserCommentary
+          paths:
+            - public
+  deploy:
+    <<: *defaults
+    steps:
+      - *git_restore_cache
+      - checkout
+      - *git_save_cache
+
+      - echo "biblicalblueprints.org,208.113.161.19 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDN0aj+g1xMsxuyjqFF7bP10Tum1XWV4cR9qExaq9UjHhhA/m718Mjg6Ihu++GaDIM3G2pkPLein1hG6Fz8y0HmYt12JxQbCe5HFvZJoP+E/5KVtf4l/7VKu8XP3NZoN0hUpy4qg+eebZYvZiYxZMq3RjhZ65k/kYMN+mnTjEslbKrl5yHRvwX8NkPgK0Gc0rFU4dnNIJx7+nN72fnOm6Fs8IT3ThH6+HR3MX2LBkvQb0L+WEm+GhIDlCmTm/dpxLhBT9EKB1oTdSuzjl/JQGVBg5iu4TStot1S7vs/8ywMN9YJ7A375lnyh4LuSPrWrxSyDUeZM1h8gUEiWg8ubmaT" >> ~/.ssh/known_hosts
+      - ./deploy-staging.sh
+
+workflows:
+  version: 2
+  install_test_deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
