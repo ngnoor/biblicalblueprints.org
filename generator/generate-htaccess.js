@@ -19,13 +19,14 @@ function main() {
 
 function generate(redirects) {
 	return `
-AddOutputFilterByType DEFLATE text/html text/plain text/css
+AddOutputFilterByType DEFLATE text/html text/plain text/css image/svg+xml
 
 ExpiresActive On
 ExpiresDefault "access plus 4 hours"
 ExpiresByType text/html A90
 ExpiresByType text/plain A3600
 ExpiresByType text/css A3600
+ExpiresByType image/svg+xml A3600
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
