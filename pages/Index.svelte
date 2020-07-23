@@ -1,7 +1,7 @@
-<:Head>
+<svelte:head>
 	<title>Biblical Blueprints</title>
 	<link href="garamond-logo-font.css" rel="stylesheet" type="text/css" />
-</:Head>
+</svelte:head>
 
 <div class="header">
 	<img class="logo" src="images/logo-bb.svg" alt="BB Logo">

@@ -1,6 +1,6 @@
-<:Head>
+<svelte:head>
 	<title>Contact · Biblical Blueprints</title>
-</:Head>
+</svelte:head>
 
 <h1>Contact Biblical Blueprints</h1>
 

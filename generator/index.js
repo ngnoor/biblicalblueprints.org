@@ -1,25 +1,25 @@
-require(`svelte/ssr/register`)
+require(`svelte/register`)
 
 const fs = require(`fs`)
 const path = require(`path`)
 const paramCase = require(`param-case`)
 
-const Wrapper = require(`../components/Wrapper.html`)
+const Wrapper = require(`../components/Wrapper.svelte`).default
 
 const relativeCwd = (...paths) => path.join(process.cwd(), ...paths)
 
 const defaultData = { rootPath: `./` }
 module.exports = (pageFiles, outputDirectory, data = defaultData) => {
 	pageFiles.forEach(file => {
-		const Page = require(relativeCwd(file))
+		const Page = require(relativeCwd(file)).default
 
 		const html = makeHtml(Wrapper.render(Object.assign({
 			Page,
 		}, data)))
 
-		const { name, ext } = path.parse(file)
+		const { name } = path.parse(file)
 
-		const outputFileName = paramCase(name) + ext
+		const outputFileName = paramCase(name) + `.html`
 		fs.writeFileSync(relativeCwd(outputDirectory, outputFileName), html)
 	})
 }

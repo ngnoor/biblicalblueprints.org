@@ -1,5 +1,10 @@
-<:Head>
-	
+<script>
+	export let Page = null
+	export let rootPath = ''
+</script>
+
+<svelte:head>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113064692-3"></script>
 	<script>
@@ -22,33 +27,33 @@
 	<meta name="msapplication-TileColor" content="#b91d47">
 	<meta name="theme-color" content="#ffffff">
 
-</:Head>
+</svelte:head>
 
 <nav class="navbar-top">
 	<div class="centered-content navbar-top-content">
 		<img
-			src="{{rootPath}}images/logo-bb-white-circle.svg"
+			src={rootPath + "images/logo-bb-white-circle.svg"}
 			alt="BB logo in white circle"
 		>
 		<ul>
 			<li>
-				<a href="{{rootPath}}">Home</a>
+				<a href={rootPath}>Home</a>
 			</li>
 			<li>
 				<a href="https://donations.biblicalblueprints.org">Give</a>
 			</li>
 			<li>
-				<a href="{{rootPath}}contact.html">Contact</a>
+				<a href={rootPath + "contact.html"}>Contact</a>
 			</li>
 			<li>
-				<a href="{{rootPath}}email-list.html">Email list</a>
+				<a href={rootPath + "email-list.html"}>Email list</a>
 			</li>
 		</ul>
 	</div>
 </nav>
 
 <div class="centered-content main-content">
-	<:Component {Page} />
+	<svelte:component this={Page} />
 </div>
 
 

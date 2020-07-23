@@ -1,6 +1,6 @@
-<:Head>
+<svelte:head>
 	<title>Email list · Biblical Blueprints</title>
-</:Head>
+</svelte:head>
 
 <h1>Email list</h1>
 <hr>
