@@ -8,13 +8,13 @@ defaults: &defaults
 git_restore_cache: &git_restore_cache
   restore_cache:
     keys:
-      - source-v1-{{ .Branch }}-{{ .Revision }}
-      - source-v1-{{ .Branch }}-
-      - source-v1-
+      - source-v2-{{ .Branch }}-{{ .Revision }}
+      - source-v2-{{ .Branch }}-
+      - source-v2-
 
 git_save_cache: &git_save_cache
   save_cache:
-    key: source-v1-{{ .Branch }}-{{ .Revision }}
+    key: source-v2-{{ .Branch }}-{{ .Revision }}
     paths:
       - ".git"
 
