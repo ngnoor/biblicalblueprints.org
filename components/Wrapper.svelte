@@ -32,8 +32,8 @@
 <nav class="navbar-top">
 	<div class="centered-content navbar-top-content">
 		<img
-			src={rootPath + "images/logo-bb-white-circle.svg"}
-			alt="BB logo in white circle"
+			src={rootPath + "images/logo-di.png"}
+			alt="DI logo"
 		>
 		<ul>
 			<li>
