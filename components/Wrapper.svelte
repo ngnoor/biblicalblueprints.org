@@ -91,7 +91,7 @@
 	color: #fdfdfd;
 	text-decoration: none;
 	white-space: nowrap;
-	font-size: 18px;
+	font-size: 14px;
 
 	padding-left: 16px;
 	padding-right: 16px;
