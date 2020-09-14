@@ -32,8 +32,8 @@
 <nav class="navbar-top">
 	<div class="centered-content navbar-top-content">
 		<img
-			src={rootPath + "images/logo-bb-white-circle.svg"}
-			alt="BB logo in white circle"
+			src={rootPath + "images/logo-di.png"}
+			alt="DI logo"
 		>
 		<ul>
 			<li>
@@ -91,7 +91,7 @@
 	color: #fdfdfd;
 	text-decoration: none;
 	white-space: nowrap;
-	font-size: 18px;
+	font-size: 14px;
 
 	padding-left: 16px;
 	padding-right: 16px;
