@@ -31,22 +31,17 @@
 
 <nav class="navbar-top">
 	<div class="centered-content navbar-top-content">
+		<!-- Josh, can we turn the DI logo into the "Home" link and remove the words? I can't do it, but I'd prefer that for design purposes. -->
 		<img
 			src={rootPath + "images/logo-di.png"}
 			alt="DI logo"
 		>
 		<ul>
 			<li>
-				<a href={rootPath}>Home</a>
+				<a href={rootPath + "contact.html"}>About</a>
 			</li>
 			<li>
-				<a href="https://donations.biblicalblueprints.org">Give</a>
-			</li>
-			<li>
-				<a href={rootPath + "contact.html"}>Contact</a>
-			</li>
-			<li>
-				<a href={rootPath + "email-list.html"}>Email list</a>
+				<a href="https://donations.biblicalblueprints.org">Support</a>
 			</li>
 		</ul>
 	</div>
