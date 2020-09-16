@@ -17,6 +17,7 @@
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900|Vollkorn:400,700,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css" />
 
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
