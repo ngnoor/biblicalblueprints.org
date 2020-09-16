@@ -1,8 +1,10 @@
 body {
 	background-color: #faf7ee;
 
-	font-family: 'Merriweather', 'PT Serif', Georgia, 'Times New Roman', serif;
-	font-size: 18px;
+	font-family: 'Vollkorn', Georgia, 'Times New Roman', serif;
+	line-height: 1.5;
+	font-size: 20px;
+	color: #222;
 
 	margin: 0;
 	padding: 0;
@@ -16,19 +18,20 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 600;
+	line-height: 1.2;
+	margin: 0.8ex 0 0.4ex 0;
 	color: #333333;
 }
 
 h1 {
-	font-size: 38px;
-	margin-top: 24px;
-	margin-bottom: 8px;
+	font-size: 42px;
+	
 }
 h2 {
-	font-size: 28px;
-	margin-top: 24px;
-	margin-bottom: 8px;
+	font-size: 32px;
+	
 }
 h3 {
 	font-size: 22px;
