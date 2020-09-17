@@ -1,7 +1,7 @@
 body {
 	background-color: #faf7ee;
 
-	font-family: 'Merriweather', 'PT Serif', Georgia, 'Times New Roman', serif;
+	font-family: 'Vollkorn', Georgia, 'Times New Roman', serif;
 	font-size: 18px;
 
 	margin: 0;
@@ -16,7 +16,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	font-family: Helvetica, sans-serif;
 	color: #333333;
 }
 
