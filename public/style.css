@@ -46,9 +46,7 @@ h6 {
 	font-weight: 700;
 }
 
-hr {
-	margin: 0;
-	border: none;
+h1, h2 {
 	border-bottom: 1px #aaaaaa dotted;
 }
 
@@ -80,6 +78,14 @@ a:hover {
 	}
 }
 
+img.wraparound {
+	width: 200px;
+	max-width: 100%;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	float: left;
+}
+
 @media (max-width: 480px) {
 	.centered-content {
 		padding: 0 16px;
@@ -92,4 +98,8 @@ a:hover {
 		font-size: 26px;
 	}
 
+	img.wraparound {
+		width: 100%;
+		float: unset;
+	}
 }

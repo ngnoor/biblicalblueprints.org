@@ -31,14 +31,17 @@
 
 <nav class="navbar-top">
 	<div class="centered-content navbar-top-content">
-		<!-- Josh, can we turn the DI logo into the "Home" link and remove the words? I can't do it, but I'd prefer that for design purposes. -->
-		<img
-			src={rootPath + "images/logo-di.png"}
-			alt="DI logo"
-		>
 		<ul>
 			<li>
-				<a href={rootPath + "contact.html"}>About</a>
+				<a href="{rootPath}">
+					<img
+						src={rootPath + "images/logo-di.png"}
+						alt="Dominion Institute"
+					>
+				</a>
+			</li>
+			<li>
+				<a href={rootPath + "about.html"}>About</a>
 			</li>
 			<li>
 				<a href="https://donations.biblicalblueprints.org">Support</a>
@@ -59,8 +62,6 @@
 
 .navbar-top img {
 	height: 32px;
-	width: 32px;
-	margin-right: 16px;
 }
 
 .navbar-top-content {
@@ -86,7 +87,7 @@
 	color: #fdfdfd;
 	text-decoration: none;
 	white-space: nowrap;
-	font-size: 14px;
+	font-size: 18px;
 
 	padding-left: 16px;
 	padding-right: 16px;
@@ -113,8 +114,6 @@
 @media (max-width: 680px) {
 	.navbar-top img {
 		height: 28px;
-		width: 28px;
-		margin-right: 16px;
 	}
 
 	.navbar-top a {
@@ -129,5 +128,10 @@
 	}
 }
 
+@media (max-width: 500px) {
+	.navbar-top img {
+		height: 20px;
+	}
+}
 
 </style>
