@@ -16,7 +16,7 @@
 	After traveling internationally for several years offering leadership training, worldview classes, and theological lectures, he founded Biblical Blueprints LLC in 2020 to better advance his commitment to take the transformational gospel to the ends of the earth. He and his wife, Kathy, have five married children and fifteen grandchildren. In his spare time he enjoys talking theology with his friends and answering a few of his million emails.
 </p>
 <p>
-	His sermons, commentary, and books are available at <a href="biblicalblueprints.com">BiblicalBlueprints.com</a>.
+	His sermons, commentary, and books are available at <a href="https://biblicalblueprints.com">BiblicalBlueprints.com</a>.
 </p>
 
 <h1>The Board</h1>
