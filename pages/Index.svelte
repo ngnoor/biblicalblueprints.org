@@ -23,5 +23,5 @@
 -->
 <h2>Questions?</h2>
 <p>
-	Send us an email at info@dominioninstitute.org
+	Send us an email at <a href="mailto:info@dominioninstitute.org">info@dominioninstitute.org</a>
 </p>
