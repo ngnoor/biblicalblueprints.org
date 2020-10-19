@@ -108,7 +108,6 @@
 .main-content {
 	padding-top: 16px;
 	padding-bottom: 32px;
-	background-color: #fbfbfb;
 }
 
 @media (max-width: 680px) {
