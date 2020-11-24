@@ -79,10 +79,10 @@ a:hover {
 }
 
 img.wraparound {
-	width: 200px;
+	width: 250px;
 	max-width: 100%;
-	margin-right: 8px;
-	margin-bottom: 8px;
+	margin-right: 12px;
+	margin-bottom: 12px;
 	float: left;
 }
 
