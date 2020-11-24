@@ -4,7 +4,7 @@
 
 <hr size="1px" width="100%" color="#aaaaaa" style="dotted" margin-bottom="25px">
 
-<img src="images/pk.jpg" class="wraparound">
+<img src="images/pk2.jpg" class="wraparound">
 
 <p>
 	Phillip Kayser is an author, pastor, counselor, and Biblical scholar. He has written books on a wide variety of topics, including <em>The Canon of Scripture: A Presuppositional Study</em>, <em>Conception Control: Avoiding Antinomianism and Legalism</em>, and <em>Biblical Romance: What Does the Bible Say About Finding a Spouse?</em>
