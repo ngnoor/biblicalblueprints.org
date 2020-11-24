@@ -27,26 +27,25 @@
 	<meta name="msapplication-TileColor" content="#b91d47">
 	<meta name="theme-color" content="#ffffff">
 
+	<link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
 </svelte:head>
 
 <nav class="navbar-top">
 	<div class="centered-content navbar-top-content">
-		<img
-			src={rootPath + "images/logo-bb-white-circle.svg"}
-			alt="BB logo in white circle"
-		>
 		<ul>
 			<li>
-				<a href={rootPath}>Home</a>
+				<a href="{rootPath}">
+					<img
+						src={rootPath + "images/logo-di.png"}
+						alt="Dominion Institute"
+					>
+				</a>
 			</li>
 			<li>
-				<a href="https://donations.biblicalblueprints.org">Give</a>
+				<a href={rootPath + "about.html"}>About</a>
 			</li>
 			<li>
-				<a href={rootPath + "contact.html"}>Contact</a>
-			</li>
-			<li>
-				<a href={rootPath + "email-list.html"}>Email list</a>
+				<a href="https://donations.biblicalblueprints.org">Support</a>
 			</li>
 		</ul>
 	</div>
@@ -64,8 +63,6 @@
 
 .navbar-top img {
 	height: 32px;
-	width: 32px;
-	margin-right: 16px;
 }
 
 .navbar-top-content {
@@ -112,14 +109,11 @@
 .main-content {
 	padding-top: 16px;
 	padding-bottom: 32px;
-	background-color: #fbfbfb;
 }
 
 @media (max-width: 680px) {
 	.navbar-top img {
 		height: 28px;
-		width: 28px;
-		margin-right: 16px;
 	}
 
 	.navbar-top a {
@@ -134,5 +128,10 @@
 	}
 }
 
+@media (max-width: 500px) {
+	.navbar-top img {
+		height: 20px;
+	}
+}
 
 </style>

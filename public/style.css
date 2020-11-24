@@ -1,7 +1,7 @@
 body {
-	background-color: #faf7ee;
+	background-color: #fdfdfd;
 
-	font-family: 'Merriweather', 'PT Serif', Georgia, 'Times New Roman', serif;
+	font-family: 'Vollkorn', Georgia, 'Times New Roman', serif;
 	font-size: 18px;
 
 	margin: 0;
@@ -16,7 +16,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	color: #333333;
 }
 
@@ -46,9 +46,7 @@ h6 {
 	font-weight: 700;
 }
 
-hr {
-	margin: 0;
-	border: none;
+h1, h2 {
 	border-bottom: 1px #aaaaaa dotted;
 }
 
@@ -80,6 +78,14 @@ a:hover {
 	}
 }
 
+img.wraparound {
+	width: 200px;
+	max-width: 100%;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	float: left;
+}
+
 @media (max-width: 480px) {
 	.centered-content {
 		padding: 0 16px;
@@ -92,4 +98,8 @@ a:hover {
 		font-size: 26px;
 	}
 
+	img.wraparound {
+		width: 100%;
+		float: unset;
+	}
 }
