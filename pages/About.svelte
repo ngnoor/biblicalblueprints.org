@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>About · Biblical Blueprints</title>
+	<title>About · Dominion Institute</title>
 </svelte:head>
 
 <h1>President</h1>

@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Email list · Biblical Blueprints</title>
+	<title>Email list · Dominion Institute</title>
 </svelte:head>
 
 <h1>Email list</h1>
