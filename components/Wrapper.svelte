@@ -92,8 +92,8 @@
 	white-space: nowrap;
 	font-size: 18px;
 
-	padding-left: 16px;
-	padding-right: 16px;
+	padding-left: 0px;
+	padding-right: 32px;
 
 	display: flex;
 	align-items: center;
