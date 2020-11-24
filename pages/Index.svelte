@@ -2,6 +2,8 @@
 	Dominion Institute is a Christian non-profit organization founded to promote Biblical reformation through the educational ministry of Dr. Phillip Kayser. Our goal is to see individuals, families, churches, and cultures living by "every word that comes from the mouth of God" (Mt. 4:4). To fulfill this mission, we train missionaries, mentor pastors, encourage the underground church, translate theological resources, promote Biblical conferences, and support other ministries.
 </p>
 
+<hr size="1px" width="100%" color="#aaaaaa" style="dotted" margin-bottom="25px">
+
 <img src="images/pk.jpg" class="wraparound">
 
 <p>
